@@ -4,7 +4,7 @@ organization  := "com.miodx.common"
 version       := "0.3.0"
 bucketSuffix  := "era7.com"
 
-scalaVersion  := "2.12.8"
+scalaVersion  := "2.11.11"
 val scarphVersion = "0.5.0"
 val titanVersion  = "1.0.0"
 
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "com.miodx.common"        %% "scarph"           % scarphVersion,
   "com.miodx.common"        %% "scarph"           % scarphVersion % Test classifier "tests",
   "com.thinkaurelius.titan" %  "titan-berkeleyje" % titanVersion  % Test,
-  "org.scalatest"           %% "scalatest"        % "3.0.1"       % Test,
+  "org.scalatest"           %% "scalatest"        % "3.0.5"       % Test,
   "org.slf4j"               %  "slf4j-nop"        % "1.7.5"       % Test
 )
 
